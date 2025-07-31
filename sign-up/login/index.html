@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(60deg, #3f638a, #b8d5f5);
+        margin: 0;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 40px;
+        color: rgb(0, 0, 0);
+        border-radius: 8px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+        width: 60vw;
+        max-width: 300px;
+        text-align: center;
+      }
+      h2 {
+        margin-bottom: 0px;
+        color: #000000;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      hr {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 1px;
+        border: none;
+        background: #ccc;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+      .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #605b63;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      input[type='text'],
+      input[type='password'],
+      input[type='email'] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      input::placeholder {
+        color: rgb(182, 178, 178);
+        font-size: 14px;
+      }
+      #checkbox {
+        text-align: left;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #2613d1;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #3f638a;
+        }
+      }
+
+      .links {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+      }
+      .links a {
+        text-decoration: none;
+        color: #2613d1;
+      }
+      .links #forgot-password {
+        color: #c71212;
+        text-decoration: none;
+      }
+      .links #forgot-password:hover {
+        text-decoration: underline;
+      }
+      .links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Secure Client Login</h2>
+      <hr />
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="username">Email Address</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div id="checkbox">
+          <label> <input type="checkbox" checked /> Remember Me</label>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div class="links">
+        <p>Don't have an account? <a href="../">Create a New Account</a></p>
+        <p><a id="forgot-password" href="#">Forgot Password?</a></p>
+      </div>
+    </div>
+  </body>
+</html>
